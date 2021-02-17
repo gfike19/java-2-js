@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    <form method="post">
+        <label htmlfor="words">Enter some text: </label>
+        <input type="text" name="words" id="words"/>
+        <input type="submit" name="submit" id="Submit" value="Submit"/>
+    </form>
+</body>
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+document.write([(${words})]):
+/*]]>*/
+    </script>
+</html>
