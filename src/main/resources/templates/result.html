@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<script th:inline="javascript">
+        var words = [[${words}]];
+        if(words != null) {
+        document.write(words);
+        }
+    </script>
+</body>
+</html>

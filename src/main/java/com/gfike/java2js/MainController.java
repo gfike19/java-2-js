@@ -19,6 +19,7 @@ public class MainController {
     @PostMapping
     public String index (@RequestParam("words") String words, Model model) {
         model.addAttribute("words", words);
-        return "redirect:";
+        return "result";
     }
+
 }
